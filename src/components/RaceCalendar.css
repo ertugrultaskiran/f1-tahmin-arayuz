@@ -1,0 +1,86 @@
+.race-calendar {
+  background: var(--bg-secondary);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px var(--shadow-color);
+  margin-bottom: 2rem;
+}
+
+.race-calendar h2 {
+  color: var(--accent-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.race-card {
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+  padding: 1.25rem;
+  transition: transform 0.2s;
+}
+
+.race-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.race-header {
+  margin-bottom: 1rem;
+}
+
+.race-header .round {
+  display: inline-block;
+  background: var(--accent-primary);
+  color: var(--text-primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.race-header h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.race-details {
+  color: var(--text-secondary);
+}
+
+.race-details p {
+  margin: 0.5rem 0;
+}
+
+.race-details .date {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.race-details .circuit {
+  font-style: italic;
+}
+
+.race-details .country {
+  color: var(--accent-primary);
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .calendar-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .race-card {
+    margin: 0 1rem;
+  }
+} 
